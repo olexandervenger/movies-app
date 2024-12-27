@@ -1,0 +1,13 @@
+.appFooter {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.tilte {
+  text-align: center;
+}
+
+.containerPagination {
+  display: flex;
+  justify-content: center;
+}

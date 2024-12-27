@@ -1,0 +1,101 @@
+.movieList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.containerCardMovies {
+  max-width: 1000px;
+  flex: 1 1 300px;
+}
+
+.favoriteCardMovie {
+  background: #fff9d8;
+}
+
+.cardMovie {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 980px;
+  margin: 10px;
+  flex: 1 1 270px;
+}
+
+.cardMovie .ant-card-cover {
+  display: flex;
+  justify-content: center;
+  max-width: 520px !important;
+  flex: 1 1 230px;
+}
+
+.cardMovie .ant-card-cover .containerImage {
+  max-width: 300px !important;
+  flex: 1 1 230px;
+}
+
+.cardMovie .ant-card-cover .containerImage img {
+  width: 100%;
+}
+
+.cardMovie .ant-card-body {
+  max-width: 650px;
+  flex: 1 1 270px;
+  padding: 0;
+  margin: 15px;
+}
+
+.cardMovie .ant-card-body .cardMovieTitle {
+  white-space: initial;
+}
+
+
+.favoriteCardMovie .ant-card-actions {
+  background: #fff9d8;
+}
+
+.cardMovie .ant-card-actions {
+  max-width: 50px;
+}
+
+.cardMovie .ant-card-actions .actionStar, .activeActionStar {
+  border: 0;
+  padding: 4px 10px;
+}
+
+.favoriteCardMovie .ant-card-actions .actionStar, .activeActionStar {
+  background: #fff9d8;
+}
+
+.favoriteCardMovie .ant-card-actions .actionStar:focus, .activeActionStar:focus {
+  background: #fff9d8;
+}
+
+.cardMovie .actionStar svg {
+  width: 24px;
+  height: 24px;
+  fill: #ccc;
+}
+
+.cardMovie .activeActionStar svg {
+  width: 24px;
+  height: 24px;
+  fill: #e4a40e;
+}
+
+.cardMovie .actionStar svg:hover {
+  fill: #e4a40e;
+}
+
+@media (max-width: 608px) {
+  .cardMovie .ant-card-cover {
+    order: 1;
+  }
+
+  .cardMovie .ant-card-body {
+    order: 3;
+  }
+
+  .cardMovie .ant-card-actions {
+    order: 2;
+  }
+}
